@@ -1,0 +1,45 @@
+.menu__btn {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    height: 50px;
+    &__icon {
+        height: 5px;
+        width: 42px;
+        background-color: $color__primary;
+        display: block;
+        margin-bottom: 3px;
+        margin-top: 24px;
+        position: relative;
+        &::before {
+            content: '';
+            height: 5px;
+            width: 42px;
+            background-color: $color__primary;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            transform: translateY(-12px)
+        }
+        &::after {
+            content: '';
+            height: 5px;
+            width: 42px;
+            background-color: $color__primary;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            transform: translateY(-24px)
+        }
+    }
+    &__title {
+        margin-left: -1px;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $color__primary;
+        font-family: Avenir-Black;
+        font-size: 14px;
+    }
+}
