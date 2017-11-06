@@ -1,5 +1,6 @@
 ### Custom ###
 /dist/assets/stylesheet/**
+/dist/assets/javascript/**
 
 # Created by https://www.gitignore.io/api/macos,node
 
