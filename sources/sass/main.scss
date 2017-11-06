@@ -5,8 +5,11 @@
 @import './modules/menu.scss';
 @import './modules/nav.scss';
 @import './modules/identity.scss';
+@import './modules/card.scss';
 
 @import './pages/home.scss';
+@import './pages/performance.scss';
+@import './pages/design.scss';
 
 body {
     position: fixed;
@@ -17,4 +20,11 @@ body {
     width: 100%;
     right: 100%;
     overflow: hidden;
+}
+
+.section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }

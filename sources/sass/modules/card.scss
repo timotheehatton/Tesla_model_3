@@ -1,0 +1,31 @@
+.card {
+    background: #FFFFFF;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.10);
+    width: 480px;
+    position: relative;
+    padding: 35px 40px 35px 40px;
+    &::after {
+        content: '';
+        width: 5px;
+        display: block;
+        height: 42px;
+        background-color: $color__primary;
+        position: absolute;
+        top: 25px;
+        left: 0;
+    }
+    &__title {
+        font-family: Avenir-Black;
+        font-size: 25px;
+        color: #464646;
+        letter-spacing: 0;
+    }
+    &__content {
+        margin-top: 10px;
+        font-family: Avenir-Book;
+        font-size: 16px;
+        color: #464646;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+}
