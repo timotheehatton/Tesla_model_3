@@ -11,6 +11,7 @@
 @import './pages/performance.scss';
 @import './pages/design.scss';
 @import './pages/habitacle.scss';
+@import './pages/security.scss';
 
 body {
     position: fixed;
@@ -22,6 +23,7 @@ body {
     right: 100%;
     overflow: hidden;
 }
+
 
 .section {
     position: absolute;

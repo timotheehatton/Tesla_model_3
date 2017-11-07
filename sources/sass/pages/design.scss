@@ -1,4 +1,5 @@
 .design {
+    display: none;
     &__background {
         width: 1065px;
         position: absolute;
@@ -6,7 +7,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         margin-top: -50px;
-        display: none;
     }
     &__card {
         position: absolute;

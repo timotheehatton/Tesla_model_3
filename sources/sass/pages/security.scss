@@ -1,0 +1,58 @@
+.security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container {
+        margin-top: 400px;
+        &__cercle {
+            display: flex;
+            transform: rotateX(100deg);
+            &__item {
+                width: 600px;
+                height: 600px;
+                border-radius: 50%;
+                opacity: 0.25;
+                background: #FBE3E6;
+                border: 5px solid $color__primary;
+                &:nth-child(2) {
+                    margin-left: -200px;
+                }
+                &::after {
+                    content: '';
+                    position: relative;
+                    z-index: -1;
+                    display: block;
+                    border: 40px solid $color__primary;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    animation-name: pulse_loop;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+                @keyframes pulse_loop {
+                    0% {
+                        transform: scale(.1);
+                        opacity: 1
+                    }
+                    99% {
+                        transform: scale(2);
+                        opacity: 0;
+                    }
+                    100% {
+                        transform: scale(.1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        &__radar {
+
+        }
+        &__card {
+            position: absolute;
+            top: 160px;
+            right: 160px;
+        }
+    }
+}
