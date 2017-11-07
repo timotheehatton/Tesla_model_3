@@ -1,6 +1,7 @@
 @import './base/fonts.scss';
 @import './base/reset.scss';
 @import './base/var.scss';
+@import './base/box.scss';
 
 @import './modules/menu.scss';
 @import './modules/nav.scss';
@@ -12,22 +13,5 @@
 @import './pages/design.scss';
 @import './pages/habitacle.scss';
 @import './pages/security.scss';
-
-body {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    right: 100%;
-    overflow: hidden;
-}
-
-
-.section {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
+@import './pages/ecologie.scss';
+@import './pages/configurator.scss';
