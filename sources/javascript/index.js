@@ -1,8 +1,6 @@
-var close_btn = document.querySelector('.menu__close-btn')
-var open_btn = document.querySelector('.menu__btn')
-var menu     = document.querySelector('.menu')
-
-console.log('yolo')
+const close_btn = document.querySelector('.menu__close-btn'),
+      open_btn  = document.querySelector('.menu__btn'),
+      menu      = document.querySelector('.menu')
 
 
 open_btn.addEventListener('click', () => {
@@ -12,6 +10,3 @@ open_btn.addEventListener('click', () => {
 close_btn.addEventListener('click', () => {
     menu.classList.remove('menu__active')
 })
-// menu__btn
-
-// menu
